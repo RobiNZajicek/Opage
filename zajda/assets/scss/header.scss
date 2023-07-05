@@ -1,0 +1,342 @@
+@import 'variables.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,100&display=swap');
+.header {
+  &__navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: $header-height;
+    padding: 15px 0rem 0rem 0rem;
+    background-color: $background-color;
+    
+
+    &__items {
+      display: flex;
+      flex-direction: row;
+      justify-content: end;
+     
+
+      a {
+        text-decoration: none;
+        color: inherit;
+        margin-right: 7rem;
+        font-size: 18px;
+        
+        
+      }
+    }
+
+    &__logo {
+      position: absolute;
+      left: 5px;
+      top: 1px;
+      padding: $header-logo-padding;
+
+      &__image {
+        width: 150px;
+        height: 35px;
+      }
+    }
+  }
+
+
+  &__about {
+    display: flex;
+    align-items: center;
+    padding: 0rem  0rem 2rem 5rem;
+    background-color: $background-color;
+
+    &__text {
+      margin-left: 10%;
+
+      h2 {
+        font-family: 'Playfair Display';
+        font-size:65px;
+        margin-bottom: 10px;
+        font-weight:  400;
+        
+        
+      }
+
+      h1 {
+        font-family: 'Playfair Display';
+        font-weight:  500;
+        font-size: 82px;
+        margin-bottom: 20px;
+        color: $secondary-color;
+        
+      }
+
+      p {
+
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 5px;
+        width: 40%;
+      }
+
+      &__buttons {
+        &__first,
+        &__second {
+          margin-left: 0;
+          border-radius: 6px;
+          padding: 5px 20px;
+          font-size: 16px;
+          cursor: pointer;
+          transition: background-color 0.3s ease-in-out;
+        }
+
+        &__first {
+          margin-left: 0;
+          height: 40px;
+          color: #fff;
+          background-color: $secondary-color;
+          border: 3px solid $background-color;
+
+          &:hover {
+            background-color: darken($secondary-color, 10%);
+          }
+        }
+
+        &__second {
+          background-color: #fff;
+          height: 35px;
+
+          &:hover {
+            background-color: rgba(255, 255, 255, 0.342);
+          }
+        }
+
+        &__second {
+          margin-left: 5px;
+        }
+      }
+    }
+
+    &__women {
+      display: flex;
+      justify-content: end;
+      margin-right: 10%;
+      margin-bottom: 1%;
+      &__img {
+        max-width: 450px;
+        height: 600px;
+      }
+    }
+  }
+
+  // Responsive styles for 1600px
+  @media (max-width: ($breakpoint-tablet )){
+    &__navbar {
+      flex-direction: column;
+      justify-content: center;
+      padding-right: 0;
+      &__items {
+        margin-top: 5px;
+        margin-left: 22%;
+        margin-right: 5%;
+        justify-content: end;
+        a {
+          margin: 10px;
+          font-size: 13px;
+        }
+      }
+        &__logo{
+        padding: $header-logo-padding;
+      &__image {
+        width: 120px;
+        height: 30px;
+          }
+        } 
+    }
+    
+    &__about {
+      margin-left: 7%;
+      padding: 0rem 0% 2rem;
+      
+      
+      &__text {
+        margin-left: 60px;
+        
+
+        h2 {
+          font-size: 39px;
+        }
+
+        h1 {
+          font-size: 70px;
+        }
+
+        p {
+          width: 50%;
+          font-size: 15px;
+          
+        }
+      }
+      &__women {
+        
+        margin-left: 5rem;
+        display: flex;
+        margin-right: 7%;
+  
+        &__img {          
+          height: 475px;
+          width: 350px;
+        }
+      }
+    }
+   
+  }
+  
+
+  // Responsive styles for mobile
+  @media (max-width:($breakpoint-mobile + 150 )) {
+    &__navbar {
+      flex-direction: column;
+      justify-content: center;
+      &__items {
+        margin-top: 5px;
+        justify-content: end;
+        margin-left: 22%;
+        margin-right: 2%;
+        
+  
+        a {
+          margin: 9px;
+          font-size: 10px;
+        }
+      }
+        &__logo{
+          margin-top: 9px;
+          &__image{
+            height: 20px;
+            width: 85px;
+          }
+        } 
+    }
+
+    &__about {
+      flex-direction: column;
+      text-align: center;
+      padding: $content-padding;
+      display: flex;////////////
+      margin-left: 0;
+      margin-top: 1%;
+      &__text {
+        margin-left: 0;
+        align-items: center;
+ 
+        h2 {
+          font-size: 25px;
+        }
+
+        h1 {
+          font-size: 40px;
+        }
+
+        p {
+          font-size: 14px;
+          margin-left: 15%;
+          width: 70%;
+        }
+
+        &__buttons {
+          &__first {
+            // ...
+          }
+
+          &__second {
+            display: block;
+            margin: 5px auto;
+          }
+        }
+      }
+
+      &__women {
+
+        margin-left: 0;
+
+        &__img {
+          max-width: 90%;
+          height: auto;
+        }
+      }
+    }
+  }
+  @media (max-width:($breakpoint-mobilesm )) {
+    &__navbar {
+      flex-direction: column;
+      justify-content: center;
+      &__items {
+        margin-top: 0.1px;
+        justify-content: end;
+        margin-left: 22%;
+        margin-right: 2%;
+        
+  
+        a {
+          margin-top: 0px;
+          margin: 5px;
+          font-size: 7px;
+        }
+      }
+        &__logo{
+          margin-top: 7px;
+          &__image{
+            height: 20px;
+            width: 85px;
+          }
+        } 
+    }
+
+    &__about {
+      flex-direction: column;
+      text-align: center;
+      padding: $content-padding;
+      display: flex;////////////
+      margin-left: 0;
+      margin-top: 1%;
+      &__text {
+        margin-left: 0;
+        align-items: center;
+
+        h2 {
+          font-size: 25px;
+        }
+
+        h1 {
+          font-size: 40px;
+        }
+
+        p {
+          font-size: 14px;
+          margin-left: 15%;
+          width: 70%;
+        }
+
+        &__buttons {
+          &__first {
+            // ...
+          }
+
+          &__second {
+            display: block;
+            margin: 5px auto;
+          }
+        }
+      }
+
+      &__women {
+
+        margin-left: 0;
+
+        &__img {
+          max-width: 90%;
+          height: auto;
+        }
+      }
+    }
+  }
+}

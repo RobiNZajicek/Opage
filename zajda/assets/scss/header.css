@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,100&display=swap");
+.header__navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  height: 3rem;
+  padding: 15px 0rem 0rem 0rem;
+  background-color: #F1EFEA;
+}
+.header__navbar__items {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+.header__navbar__items a {
+  text-decoration: none;
+  color: inherit;
+  margin-right: 7rem;
+  font-size: 18px;
+}
+.header__navbar__logo {
+  position: absolute;
+  left: 5px;
+  top: 1px;
+  padding: 10px;
+}
+.header__navbar__logo__image {
+  width: 150px;
+  height: 35px;
+}
+.header__about {
+  display: flex;
+  align-items: center;
+  padding: 0rem 0rem 2rem 5rem;
+  background-color: #F1EFEA;
+}
+.header__about__text {
+  margin-left: 10%;
+}
+.header__about__text h2 {
+  font-family: "Playfair Display";
+  font-size: 65px;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+.header__about__text h1 {
+  font-family: "Playfair Display";
+  font-weight: 500;
+  font-size: 82px;
+  margin-bottom: 20px;
+  color: orange;
+}
+.header__about__text p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 5px;
+  width: 40%;
+}
+.header__about__text__buttons__first, .header__about__text__buttons__second {
+  margin-left: 0;
+  border-radius: 6px;
+  padding: 5px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+.header__about__text__buttons__first {
+  margin-left: 0;
+  height: 40px;
+  color: #fff;
+  background-color: orange;
+  border: 3px solid #F1EFEA;
+}
+.header__about__text__buttons__first:hover {
+  background-color: #cc8400;
+}
+.header__about__text__buttons__second {
+  background-color: #fff;
+  height: 35px;
+}
+.header__about__text__buttons__second:hover {
+  background-color: rgba(255, 255, 255, 0.342);
+}
+.header__about__text__buttons__second {
+  margin-left: 5px;
+}
+.header__about__women {
+  display: flex;
+  justify-content: end;
+  margin-right: 10%;
+  margin-bottom: 1%;
+}
+.header__about__women__img {
+  max-width: 450px;
+  height: 600px;
+}
+@media (max-width: 1600px) {
+  .header__navbar {
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 0;
+  }
+  .header__navbar__items {
+    margin-top: 5px;
+    margin-left: 22%;
+    margin-right: 5%;
+    justify-content: end;
+  }
+  .header__navbar__items a {
+    margin: 10px;
+    font-size: 13px;
+  }
+  .header__navbar__logo {
+    padding: 10px;
+  }
+  .header__navbar__logo__image {
+    width: 120px;
+    height: 30px;
+  }
+  .header__about {
+    margin-left: 7%;
+    padding: 0rem 0% 2rem;
+  }
+  .header__about__text {
+    margin-left: 60px;
+  }
+  .header__about__text h2 {
+    font-size: 39px;
+  }
+  .header__about__text h1 {
+    font-size: 70px;
+  }
+  .header__about__text p {
+    width: 50%;
+    font-size: 15px;
+  }
+  .header__about__women {
+    margin-left: 5rem;
+    display: flex;
+    margin-right: 7%;
+  }
+  .header__about__women__img {
+    height: 475px;
+    width: 350px;
+  }
+}
+@media (max-width: 950px) {
+  .header__navbar {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .header__navbar__items {
+    margin-top: 5px;
+    justify-content: end;
+    margin-left: 22%;
+    margin-right: 2%;
+  }
+  .header__navbar__items a {
+    margin: 9px;
+    font-size: 10px;
+  }
+  .header__navbar__logo {
+    margin-top: 9px;
+  }
+  .header__navbar__logo__image {
+    height: 20px;
+    width: 85px;
+  }
+  .header__about {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px;
+    display: flex;
+    margin-left: 0;
+    margin-top: 1%;
+  }
+  .header__about__text {
+    margin-left: 0;
+    align-items: center;
+  }
+  .header__about__text h2 {
+    font-size: 25px;
+  }
+  .header__about__text h1 {
+    font-size: 40px;
+  }
+  .header__about__text p {
+    font-size: 14px;
+    margin-left: 15%;
+    width: 70%;
+  }
+  .header__about__text__buttons__second {
+    display: block;
+    margin: 5px auto;
+  }
+  .header__about__women {
+    margin-left: 0;
+  }
+  .header__about__women__img {
+    max-width: 90%;
+    height: auto;
+  }
+}
+@media (max-width: 300px) {
+  .header__navbar {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .header__navbar__items {
+    margin-top: 0.1px;
+    justify-content: end;
+    margin-left: 22%;
+    margin-right: 2%;
+  }
+  .header__navbar__items a {
+    margin-top: 0px;
+    margin: 5px;
+    font-size: 7px;
+  }
+  .header__navbar__logo {
+    margin-top: 7px;
+  }
+  .header__navbar__logo__image {
+    height: 20px;
+    width: 85px;
+  }
+  .header__about {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px;
+    display: flex;
+    margin-left: 0;
+    margin-top: 1%;
+  }
+  .header__about__text {
+    margin-left: 0;
+    align-items: center;
+  }
+  .header__about__text h2 {
+    font-size: 25px;
+  }
+  .header__about__text h1 {
+    font-size: 40px;
+  }
+  .header__about__text p {
+    font-size: 14px;
+    margin-left: 15%;
+    width: 70%;
+  }
+  .header__about__text__buttons__second {
+    display: block;
+    margin: 5px auto;
+  }
+  .header__about__women {
+    margin-left: 0;
+  }
+  .header__about__women__img {
+    max-width: 90%;
+    height: auto;
+  }
+}/*# sourceMappingURL=header.css.map */

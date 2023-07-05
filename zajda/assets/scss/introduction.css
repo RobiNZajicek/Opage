@@ -1,0 +1,224 @@
+.introduction {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 90%;
+  background-color: #F1EFEA;
+}
+.introduction__img {
+  display: flex;
+  flex: 1;
+  margin-top: 10px;
+  margin-left: 15%;
+}
+.introduction__img__chair {
+  height: 600px;
+  width: 77%;
+}
+.introduction__text {
+  margin-top: 2rem;
+  flex: 1;
+  margin-left: 12rem;
+}
+.introduction__text__title {
+  font-size: 75px;
+  margin-bottom: 1rem;
+  font-family: "Playfair Display";
+  font-weight: 500;
+}
+.introduction__text__name {
+  margin-bottom: 0.5rem;
+  font-size: 35px;
+  color: orange;
+}
+.introduction__text__subtitle {
+  margin-bottom: 7px;
+  font-size: 23px;
+  color: rgb(48, 48, 141);
+  font-family: "Playfair Display";
+}
+.introduction__text__description {
+  width: 60%;
+  font-size: 22px;
+}
+.introduction__text__tags {
+  margin-top: 2rem;
+}
+.introduction__text__tags__btn {
+  border: none;
+  background-color: orange;
+  border-radius: 4px;
+  color: rgb(255, 246, 229);
+  height: 24px;
+  width: 150px;
+  margin-right: 22px;
+  font-size: 18px;
+}
+@media (max-width: 300px) {
+  .introduction .introduction {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .introduction .introduction__img {
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .introduction .introduction__img__chair {
+    height: 350px;
+    width: 350px;
+  }
+  .introduction .introduction__text {
+    flex: 1;
+    margin: 2rem;
+    text-align: center;
+    justify-content: center;
+  }
+  .introduction .introduction__text__title {
+    font-size: 50px;
+    margin-bottom: 10px;
+  }
+  .introduction .introduction__text__name {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .introduction .introduction__text__subtitle {
+    font-size: 18px;
+    color: rgb(48, 48, 141);
+    margin-bottom: 1rem;
+  }
+  .introduction .introduction__text__description {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 2rem;
+  }
+  .introduction .introduction__text__tags {
+    margin-top: 2rem;
+  }
+  .introduction .introduction__text__tags__btn {
+    height: 20px;
+    width: 90px;
+    font-size: 14px;
+    background-color: orange;
+    cursor: pointer;
+  }
+  .introduction .introduction__text__tags__btn:hover {
+    background-color: #cc8400;
+  }
+}
+@media (max-width: 1600px) {
+  .introduction .introduction {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .introduction .introduction__img {
+    margin-bottom: 1rem;
+    display: flex;
+    margin-top: 10px;
+  }
+  .introduction .introduction__img__chair {
+    height: 350px;
+    width: 350px;
+  }
+  .introduction .introduction__text {
+    flex: 1;
+    margin: 2rem;
+    text-align: center;
+    justify-content: center;
+  }
+  .introduction .introduction__text__title {
+    font-size: 50px;
+    margin-bottom: 10px;
+  }
+  .introduction .introduction__text__name {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .introduction .introduction__text__subtitle {
+    font-size: 18px;
+    color: rgb(48, 48, 141);
+    margin-bottom: 1rem;
+  }
+  .introduction .introduction__text__description {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 2rem;
+  }
+  .introduction .introduction__text__tags {
+    margin-top: 2rem;
+  }
+  .introduction .introduction__text__tags__btn {
+    height: 20px;
+    width: 90px;
+    font-size: 14px;
+    background-color: orange;
+    cursor: pointer;
+  }
+  .introduction .introduction__text__tags__btn:hover {
+    background-color: #cc8400;
+  }
+}
+@media (max-width: 800px) {
+  .introduction {
+    flex-direction: column;
+    width: 100%;
+  }
+  .introduction__img {
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+  .introduction__img__chair {
+    height: 300px;
+    width: 300px;
+  }
+  .introduction__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }
+  .introduction__text__title {
+    font-size: 30px;
+    margin-bottom: 5px;
+  }
+  .introduction__text__name {
+    font-size: 20px;
+    margin-bottom: 3px;
+  }
+  .introduction__text__subtitle {
+    font-size: 14px;
+  }
+  .introduction__text__description {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    font-family: "Kanit";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 166.3%;
+    text-align: justify;
+    color: #000000;
+    margin-left: 0;
+  }
+  .introduction__text__tags {
+    margin-top: 1.2rem;
+  }
+  .introduction__text__tags__btn {
+    height: 10px;
+  }
+}/*# sourceMappingURL=introduction.css.map */
